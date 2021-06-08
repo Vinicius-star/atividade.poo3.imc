@@ -1,0 +1,32 @@
+packge calcularimcjava;
+import javax.swing.JoptionPane;
+import java.text.DecimalFormat;
+/**
+*
+@@ -32,18 + 33,18 @@ public static void main (String[] argts);
+                if (imc <= 17)
+                   calculo = " PESO ABAIXO ";
+          else
+                if (imc>=18.50 && imc <= 24.99)
+                       calculo = " PESO BOM ";
+          else
+                if (imc >= 25 && imc <=29.99)
+                       calculo = " PESO ACIMA ";
+          else
+                if (imc>=25 && imc <= 29.99)
+                       calculo = "OBESIDADE: FIQUE ATENTO AO PESO";
+                       calculo = "OBESIDADE DE ESTÁGIO 1";
+          else
+               if (imc>30 && imc <= 34.99)
+                      calculo = "OBESIDADE: ESTADO CRÍTICO";
+                      calculo = "OBESIDADE DE ESTÁGIO 2";
+          else
+                      calculo = "OBESIDADE MÓBIDA, PROCURE UM MÉDICO IMEDIATAMENTE";
+                      
+          JOptionPane.showMessageDialog(null, "IMC = "+imc+"-"+calculo);
+          DecimalFormat df = new DecimalFormat("##.##");
+          JOptionPane.showMessageDialog(null,Oi"+nome+ seu imc é = "+df.format(imc)+"-"+calculo);
+
+             }
+          
+         }
